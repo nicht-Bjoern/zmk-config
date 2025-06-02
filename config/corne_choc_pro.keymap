@@ -79,20 +79,20 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(NUMBER_3)  &kp LS(NUMBER_4)     &kp LS(N5)     &kp LCTRL  &kp RCTRL  &kp LS(NUMBER_6)     &kp LS(N7)         &kp LS(N8)  &kp LS(N9)  &kp LS(NUMBER_0)     &kp BSPC
-&kp LCTRL  &kp LS(MINUS)     &kp LS(BACKSLASH)  &kp NON_US_BSLH   &kp LS(NON_US_BSLH)  &kp GRAVE      &kp LALT   &kp RALT   &kp RA(NON_US_BSLH)  &kp RA(MINUS)      &kp RA(N8)  &kp RA(N8)  &kp LS(RIGHT_BRACE)  &trans
-&kp LSHFT  &kp EQUAL         &kp LS(EQUAL)      &trans            &kp RA(Q)            &kp LS(GRAVE)                        &kp RA(RIGHT_BRACE)  &kp RA(BACKSLASH)  &kp RA(N7)  &kp RA(N0)  &kp RIGHT_BRACE      &kp ESCAPE
-                                                &kp LGUI          &trans               &kp SPACE                            &kp RET              &trans             &kp RALT
+&kp TAB    &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(NUMBER_3)  &kp LS(NUMBER_4)     &kp LS(N5)     &kp LCTRL  &kp RCTRL  &kp LS(NUMBER_6)       &kp LS(N7)     &kp LS(N8)  &kp LS(N9)  &kp LS(NUMBER_0)     &kp BSPC
+&kp LCTRL  &kp LS(MINUS)     &kp LS(BACKSLASH)  &kp NON_US_BSLH   &kp LS(NON_US_BSLH)  &kp GRAVE      &kp LALT   &kp RALT   &kp RA(NON_US_BSLH)    &kp RA(MINUS)  &kp RA(N8)  &kp RA(N9)  &kp LS(RIGHT_BRACE)  &trans
+&kp LSHFT  &kp EQUAL         &kp LS(EQUAL)      &kp RA(E)         &kp RA(Q)            &kp LS(GRAVE)                        &kp RA(RIGHT_BRACKET)  &kp BACKSLASH  &kp RA(N7)  &kp RA(N0)  &kp RIGHT_BRACKET    &kp ESCAPE
+                                                &kp LGUI          &trans               &kp SPACE                            &kp RET                &trans         &kp RALT
             >;
         };
 
         Umlaute {
             display-name = "EXTRA 1";
             bindings = <
-&trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACE  &trans  &kp SEMICOLON  &trans  &trans
-&trans  &kp SQT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans         &trans  &trans
-&trans  &trans   &trans  &trans  &trans  &trans                  &trans  &trans          &trans  &trans         &trans  &trans
-                         &trans  &trans  &trans                  &trans  &trans          &trans
+&trans  &trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &trans  &kp SEMICOLON  &trans  &trans
+&trans  &kp SQT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans         &trans  &trans
+&trans  &trans   &trans  &trans  &trans  &trans                  &trans  &trans            &trans  &trans         &trans  &trans
+                         &trans  &trans  &trans                  &trans  &trans            &trans
             >;
         };
 
