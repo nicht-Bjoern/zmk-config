@@ -80,14 +80,20 @@
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        Plover {
+            display-name = "QWERTY";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp T   &kp C_MUTE  &kp C_PP  &kp Y         &kp U   &kp I          &kp O   &kp P          &kp LEFT_BRACE
+&kp LCTRL  &kp A         &kp S         &kp D         &kp F         &kp G   &kp LALT    &kp RALT  &kp H         &kp J   &kp K          &kp L   &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                        &kp NUMBER_6  &kp N7  &kp N8         &kp N9  &kp N0         &kp ESC
+                                       &kp RETURN    &kp C         &kp V                         &kp N         &kp M   &kp BACKSPACE
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_UP PG_DN>,
+                <&inc_dec_kp C_PREV C_NEXT>,
+                <&inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
         extra_layer_3 {
