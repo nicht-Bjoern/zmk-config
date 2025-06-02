@@ -101,7 +101,7 @@
             bindings = <
 &kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp T   &kp LS(LA(LG(LC(RA(I)))))  &plover_disable            &kp Y         &kp U   &kp I          &kp O   &kp P          &kp LEFT_BRACKET
 &kp LCTRL  &kp A         &kp S         &kp D         &kp F         &kp G   &kp LS(LA(LG(LC(RA(U)))))  &kp LS(LA(LC(LG(RA(Z)))))  &kp H         &kp J   &kp K          &kp L   &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                        &kp NUMBER_6  &kp N7  &kp N8         &kp N9  &kp N0         &kp ESC
+&kp SPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                        &kp NUMBER_6  &kp N7  &kp N8         &kp N9  &kp N0         &kp ESC
                                        &kp RETURN    &kp C         &kp V                                                         &kp N         &kp M   &kp BACKSPACE
             >;
 
