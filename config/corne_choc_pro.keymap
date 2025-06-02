@@ -14,6 +14,22 @@
 };
 
 / {
+    macros {
+        plover_activate: plover_activate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LG(LC(RA(P))))) &to 4>;
+            label = "PLOVER_ACTIVATE";
+        };
+
+        plover_disable: plover_disable {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(RA(O))))) &to 0>;
+            label = "PLOVER_DISABLE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -27,10 +43,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp C_MUTE  &kp C_PP  &kp Y    &kp U  &kp I      &kp O    &kp P      &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G      &kp LALT    &kp RALT  &kp H    &kp J  &kp K      &kp L    &kp MINUS  &mo 3
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B                            &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE                        &kp RET  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &kp C_MUTE  &plover_activate  &kp Y    &kp U  &kp I      &kp O    &kp P      &kp BSPC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G      &kp LALT    &kp RALT          &kp H    &kp J  &kp K      &kp L    &kp MINUS  &mo 3
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B                                    &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
+                         &kp LGUI  &mo 1  &kp SPACE                                &kp RET  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -83,10 +99,10 @@
         Plover {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp T   &kp C_MUTE  &kp C_PP  &kp Y         &kp U   &kp I          &kp O   &kp P          &kp LEFT_BRACE
-&kp LCTRL  &kp A         &kp S         &kp D         &kp F         &kp G   &kp LALT    &kp RALT  &kp H         &kp J   &kp K          &kp L   &kp SEMICOLON  &kp SQT
-&kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                        &kp NUMBER_6  &kp N7  &kp N8         &kp N9  &kp N0         &kp ESC
-                                       &kp RETURN    &kp C         &kp V                         &kp N         &kp M   &kp BACKSPACE
+&kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp T   &kp LS(LA(LG(LC(RA(I)))))  &plover_disable  &kp Y         &kp U   &kp I          &kp O   &kp P          &kp LEFT_BRACE
+&kp LCTRL  &kp A         &kp S         &kp D         &kp F         &kp G   &kp LS(LA(LG(LC(RA(U)))))  &kp RALT         &kp H         &kp J   &kp K          &kp L   &kp SEMICOLON  &kp SQT
+&kp LSHFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                              &kp NUMBER_6  &kp N7  &kp N8         &kp N9  &kp N0         &kp ESC
+                                       &kp RETURN    &kp C         &kp V                                               &kp N         &kp M   &kp BACKSPACE
             >;
 
             sensor-bindings =
