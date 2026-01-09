@@ -51,6 +51,12 @@
             key-positions = <3 11>;
             layers = <0>;
         };
+
+        sz {
+            bindings = <&kp MINUS>;
+            key-positions = <16 8>;
+            layers = <0>;
+        };
     };
 
     keymap {
