@@ -31,14 +31,14 @@
             label = "PLOVER_DISABLE";
         };
 
-        prefbt0: prefbt1 {
+        prefbt0: prefbt0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 0>;
             label = "PREFBT1";
         };
 
-        prefbt1: prefbt2 {
+        prefbt1: prefbt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 1>;
