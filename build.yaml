@@ -7,11 +7,11 @@
 #
 ---
 include:
-  - board: corne_choc_pro_left//zmk
+  - board: corne_choc_pro_left
     snippet: studio-rpc-usb-uart
     shield: nice_view
     cmake-args: -DCONFIG_ZMK_STUDIO=y  -DCONFIG_ZMK_POINTING=y
-  - board: corne_choc_pro_right//zmk
+  - board: corne_choc_pro_right
     shield: nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_POINTING=y
