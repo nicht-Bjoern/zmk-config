@@ -22,7 +22,7 @@
         plover_activate: plover_activate {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LG(LC(RA(P))))) &to 4>;
+            bindings = <&kp LS(LA(LG(LC(RA(P))))) &to 0>;
             label = "PLOVER_ACTIVATE";
         };
 
@@ -110,8 +110,8 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R            &kp T      &mo 8  &none         &kp Y    &kp U         &kp I      &kp O    &kp P      &none
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F            &kp G      &mo 5  &kp LEFT_ALT  &kp H    &kp J         &kp K      &kp L    &kp MINUS  &kp RIGHT_SHIFT
+&kp TAB           &kp Q  &kp W  &kp E     &kp R            &kp T      &mo 7  &none         &kp Y    &kp U         &kp I      &kp O    &kp P      &none
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F            &kp G      &mo 4  &kp LEFT_ALT  &kp H    &kp J         &kp K      &kp L    &kp MINUS  &kp RIGHT_SHIFT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V            &kp B                           &kp N    &kp M         &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
                                 &kp LGUI  &lt 1 BACKSPACE  &kp SPACE                       &kp RET  &lt 2 DELETE  &kp RALT
             >;
@@ -129,7 +129,7 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5     &to 3     &to 6         &kp N6     &kp N7          &kp N8          &kp N9  &kp N0     &trans
+&trans  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5     &to 3     &to 5         &kp N6     &kp N7          &kp N8          &kp N9  &kp N0     &trans
 &trans  &trans  &trans  &trans    &trans  &trans     &kp LALT  &kp LEFT_ALT  &kp HOME   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP  &kp RIGHT  &kp END
 &trans  &trans  &trans  &trans    &trans  &trans                             &trans     &trans          &trans          &trans  &trans     &trans
                         &kp LGUI  &trans  &kp SPACE                          &kp ENTER  &kp BACKSPACE   &kp RIGHT_ALT
@@ -169,22 +169,6 @@
                 <&inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
-        Plover {
-            display-name = "QWERTY";
-            bindings = <
-&kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp T   &kp LS(LA(LG(LC(RA(I)))))  &plover_disable            &kp Y         &kp U   &kp I          &kp O   &kp P          &kp LEFT_BRACKET
-&kp LCTRL  &kp A         &kp S         &kp D         &kp F         &kp G   &kp LS(LA(LG(LC(RA(U)))))  &kp LS(LA(LC(LG(RA(Z)))))  &kp H         &kp J   &kp K          &kp L   &kp SEMICOLON  &kp SQT
-&kp SPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                        &kp NUMBER_6  &kp N7  &kp N8         &kp N9  &kp N0         &kp ESC
-                                       &kp RETURN    &kp C         &kp V                                                         &kp N         &kp M   &kp BACKSPACE
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_PREV C_NEXT>,
-                <&inc_dec_kp C_BRI_DN C_BRI_UP>;
-        };
-
         mouse {
             display-name = "mouse";
             bindings = <
@@ -199,7 +183,7 @@
             display-name = "WASD";
             bindings = <
 &kp C_VOLUME_UP    &kp TAB    &kp Q  &kp W    &kp E     &kp R      &kp T  &to 0  &kp Y      &kp U     &kp I      &kp O    &kp P      &kp BSPC
-&mo 7              &kp LSHFT  &kp A  &kp S    &kp D     &kp F      &kp G  &kp B  &kp H      &kp J     &kp K      &kp L    &kp MINUS  &kp RSHFT
+&mo 6              &kp LSHFT  &kp A  &kp S    &kp D     &kp F      &kp G  &kp B  &kp H      &kp J     &kp K      &kp L    &kp MINUS  &kp RSHFT
 &kp C_VOLUME_DOWN  &kp LCTRL  &kp Z  &kp X    &kp C     &kp V                    &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp ESCAPE
                                      &kp ESC  &kp LALT  &kp SPACE                &kp ENTER  &kp LGUI  &kp RALT
             >;
